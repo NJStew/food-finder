@@ -1,0 +1,345 @@
+/*http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: 'roboto', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.app {
+  background-color: #223843;
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+}
+
+
+/* Side Banner Style */
+.side-banner {
+  background-color: #335676;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  position: relative;
+  width: 20%;
+}
+
+.side-banner-h4 {
+  font-size: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+.side-banner-p {
+  font-size: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Card Style */
+.card {
+  background-color: transparent;
+  display: inline-block;
+  height: 550px;
+  margin: auto;
+  padding: 5px;
+  perspective: 1000px;
+  width: 400px;
+}
+
+.card-inner {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.card .card-inner[id="display-back"] {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Front Card Style */
+.card-front {
+  background-color: #335676;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+.choices-container {
+  background-color: #335676;
+  border-radius: 10px;
+  display: flex;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  width: 310px;
+}
+
+.choice-box {
+  background-color: #21374c;
+  height: 100px;
+  float: center;
+  margin: auto;
+  width: 100px;
+}
+
+.choice-box:hover {
+  background-color: #182836;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.choice-selected {
+  background-color: #182836;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  transition: .3s;
+}
+
+.box-one {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.box-three {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.find-btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 40px;
+  outline: transparent;
+}
+
+.find-btn-img {
+  border-radius: 50%;
+  height: 80px;
+  transition: .3s;
+}
+
+.find-btn-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+#error {
+  color: #E39774;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: auto;
+}
+
+/* Back Card Style */
+.card-back {
+  background-color: #335676;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.choices-title {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.choice-text {
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card-back-h5 {
+  font-size: 40px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-back-h6 {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-back-a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.card-back-a:hover {
+  color:#D1D1D1;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  bottom: 40px;
+  left: 40px;
+  outline: transparent;
+  position: fixed;
+}
+
+.back-btn-img {
+  border-radius: 50%;
+  height: 80px;
+  transition: .3s;
+}
+
+.back-btn-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: .3s;
+}
+
+/* Mobile Device Style */
+@media (max-width: 800px) {
+  /* Mobile Side Banner Style */
+  .side-banner {
+    position: fixed;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+  }
+
+  .side-banner-h4 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 1px;
+    padding: 5px;
+  }
+
+  .side-banner-p {
+    font-size: 10px;
+    margin-top: 1px;
+    padding: 4px;
+    padding-right: 4px;
+    text-align: center;
+  }
+
+  /* Mobile Card Style */
+  .card {
+    height: 450px;
+    width: 300px;
+  }
+  
+  /* Mobile Front Card Style */
+  .choices-title{
+    margin-top: 30px;
+  }
+
+  .choices-container {
+    margin-top: 5px;
+    width: 280px;
+  }
+
+  .choice-box {
+    height: 90px;
+    width: 90px;
+  }
+
+  .find-btn {
+    margin-top: 20px;
+  }
+
+  #error {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  /* Mobile Back Card Style */
+  .card-back-h5 {
+    font-size: 30px;
+  }
+
+  .card-back-h6 {
+    font-size: 20px;
+  }
+
+  .card-back-a {
+    font-size: 20px;
+  }
+}
