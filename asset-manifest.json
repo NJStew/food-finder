@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/food-finder/static/css/main.28409d7f.chunk.css",
+    "main.js": "/food-finder/static/js/main.2bcbc131.chunk.js",
+    "main.js.map": "/food-finder/static/js/main.2bcbc131.chunk.js.map",
+    "runtime-main.js": "/food-finder/static/js/runtime-main.10ac3c60.js",
+    "runtime-main.js.map": "/food-finder/static/js/runtime-main.10ac3c60.js.map",
+    "static/js/2.5b1273c5.chunk.js": "/food-finder/static/js/2.5b1273c5.chunk.js",
+    "static/js/2.5b1273c5.chunk.js.map": "/food-finder/static/js/2.5b1273c5.chunk.js.map",
+    "index.html": "/food-finder/index.html",
+    "precache-manifest.3170c5414599dc37b797c5c9fd6297c3.js": "/food-finder/precache-manifest.3170c5414599dc37b797c5c9fd6297c3.js",
+    "service-worker.js": "/food-finder/service-worker.js",
+    "static/css/main.28409d7f.chunk.css.map": "/food-finder/static/css/main.28409d7f.chunk.css.map",
+    "static/js/2.5b1273c5.chunk.js.LICENSE": "/food-finder/static/js/2.5b1273c5.chunk.js.LICENSE",
+    "static/media/backbtn.png": "/food-finder/static/media/backbtn.bda26c6e.png",
+    "static/media/finderbtn.png": "/food-finder/static/media/finderbtn.5bd703a4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10ac3c60.js",
+    "static/js/2.5b1273c5.chunk.js",
+    "static/css/main.28409d7f.chunk.css",
+    "static/js/main.2bcbc131.chunk.js"
+  ]
+}
